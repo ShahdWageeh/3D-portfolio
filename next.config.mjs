@@ -1,7 +1,11 @@
 // import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export"
+    output: "export",
+    images: {
+        unoptimized: true,
+    },
+    trailingSlash: true,
 };
 
 // export default withSentryConfig(nextConfig, {
